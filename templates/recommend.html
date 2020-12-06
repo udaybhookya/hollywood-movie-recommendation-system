@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 <body>
 <center><h3> Suggestions based on movie </h3></center>
-<center><h3> {{title|capitalize}} </h3></center>
+<center><h3> <i>{{title|upper}} </i> </h3></center>
+
 
 <div>
     <center>
@@ -22,27 +23,50 @@
     </tr>
   </thead>
   <tbody>
+  {% for i in range(10) %}
     <tr>
-
-      <td>
-          {% for x in m %}
-                {{x|capitalize }}  <br>
-          {% endfor %}
-      </td>
         <td>
-
-          {% for x in r %}
-        {{x}}  <br>
-      {% endfor %}
+            {{ m[i]|capitalize  }}
+        </td>
+        <td>
+            {{ r[i] }}
         </td>
 
+
     </tr>
+  {% endfor %}
   </tbody>
 </table>
     </div>
         </center>
 </div>
 
-<center> <a href = "/" >Home</a></center>
+
+
+{% for i in range(10) %}
+<center>
+<div>
+
+    <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{ m[i]|capitalize  }}</h5>
+
+    <p class="card-text">Rating : {{r[i]}} </p>
+
+    <a href= "https://www.youtube.com/results?search_query={{m[i]}}+hollywood+movie+trailer " class="btn btn-primary btn-block movie-button">Watch Trailer</a>
+  </div>
+</div>
+    <br>
+</div>
+</center>
+{% endfor %}
+
+
+
+</div>
+
+
+<center> <a href = "/" class="btn btn-primary btn-block movie-button" style="background-color: #FF5733;text-align: center;border-color: #FF5733;width:250px;">Home </a></center>
+<br>
 </body>
 </html>

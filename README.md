@@ -3,6 +3,7 @@
 <img src="https://img.shields.io/badge/frontend-HTML%2FCSS-yellow"/>
 <img src="https://img.shields.io/badge/API-TMDB-lightgrey"/>
  <h1>View project:<h1><a href ="https://hollywood-movie-recomd-api.herokuapp.com/" >Click here</a>
+ 
  ***Movie Recommendation System (content based)***
  
 <img src="https://miro.medium.com/max/1642/1*BME1JjIlBEAI9BV5pOO5Mg.png"  width="300" height="300"/>

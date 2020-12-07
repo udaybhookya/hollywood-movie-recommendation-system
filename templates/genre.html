@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div >
+ <center> <h1 style="background-color:OrangeRed;">MOVIES BASED ON GENRE</h1></center>
+</div>
+<center>
+<div class="card" style="width: 60rem;">
+    <img class="card-img-top" src="static/img/img_2.jpg" alt="Card image cap" width="400" height="500">
+    <div class="card-body">
+      <form action="{{url_for('genre_recomdf')}}">
+    <select   name="title" class="movie form-control" id="autoComplete"  style="background-color: #ffffff;border-color:#ed4040;width: 50%;color: #181818" required="required"  >
+        <option>Action Thriller </option>
+        <option>Animation</option>
+        <option>Comedy Drama </option>
+        <option>Crime</option>
+        <option>History</option>
+        <option>Horror</option>
+        <option>Sci-fi</option>
+        <option>Action Thriller</option>
+        <option>Romance</option>
+        <option>Sport</option>
+        <option>Documentary</option>
+        <option>Sci-fi Action</option>
+        <option>War</option>
+        <option>Comedy Drama Romance</option>
+        <option>Comedy Family Romance Sci-Fi</option>
+        <option>Adventure Animation Family Sport</option>
+        <option></option>
+    </select>
+          <br>
+      <center><input type="submit" class="btn btn-primary btn-block movie-button" style="background-color: #FF5733;text-align: center;border-color: #FF5733;width:120px;" value="Enter"></center>
+    </form>
+  </div>
+</div>
+    <br>
+    <center> <a href = "/" class="btn btn-primary btn-block movie-button" style="background-color: #FF5733;text-align: center;border-color: #FF5733;width:250px;">Home </a></center>
+<br>
+</center>
+</body>
+</html>

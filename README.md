@@ -2,7 +2,7 @@
 <img src="https://img.shields.io/badge/python-3.7-red" /><img src="https://img.shields.io/badge/framework-flask-orange"/> 
 <img src="https://img.shields.io/badge/frontend-HTML%2FCSS-yellow"/>
 <img src="https://img.shields.io/badge/API-TMDB-lightgrey"/>
- <h1>View project:<h1><a href ="https://hollywood-movie-recomd-api.herokuapp.com/" >Click here</a>
+ <h2>View project:<a href ="https://hollywood-movie-recomd-api.herokuapp.com/" >Click here</a></h2>
  
  ***Movie Recommendation System (content based)***
  

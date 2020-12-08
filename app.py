@@ -29,6 +29,7 @@ def recommendations(title):
 
     recommended_movies = []
     ratings = []
+    title = title.lower()
     # getting the index of the movie that matches the title
     idx = indices[indices == title].index[0]
 
@@ -73,7 +74,6 @@ def genre_recomd(title):
 
 
 app = Flask(__name__)
-
 
 
 @app.route('/')

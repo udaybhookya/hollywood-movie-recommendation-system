@@ -19,5 +19,5 @@ six==1.15.0
 sklearn==0.0
 threadpoolctl==2.1.0
 WebOb==1.8.6
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 WTForms==2.3.3
